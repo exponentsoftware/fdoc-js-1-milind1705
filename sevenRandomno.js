@@ -1,17 +1,15 @@
-function sevenRandom(n,m){
-var sevenNumber = [];
-while(sevenNumber.length != 7){
-    // for(let i=0; i < sevenNumber.length; i++){
-    var number = Math.floor(Math.random());
-   if(n<number<m){
-        if(!sevenNumber[i]){
-            sevenNumber.push(number)
-           }
-     // }
-
+function sevenRandomNo() {
+     var array = [];
+     var sevenNumber = Math.floor(Math.random() * 10);
+     while (array.length < 7) {
+       for (let i = 0; i <= array.length; i++) {
+         if (sevenNumber !== array[i]) {
+           array.push(sevenNumber);
+         }
+       }
+     }
+     return sevenNumber;
    }
-} return sevenNumber;
-
-}
-
-console.log(sevenRandom(0,9))
+   
+   console.log(sevenRandomNo());
+   
